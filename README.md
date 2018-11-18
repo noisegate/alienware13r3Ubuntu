@@ -1,4 +1,6 @@
 # alienware13r3Ubuntu
+## How I got my new Alienware 13 r3 OLED laptop working with Ubuntu18.04
+
 ## disclaimer
 I am not an expert, just desribing how I got it working...
 
@@ -26,3 +28,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 
 commented out the nomeodeset previously set to be able to do first startup
 this worked for me. 
+## Hardware
+: NVIDIA(R) GeForce(R) GTX 1060 with 6GB GDDR5 graphics memory
+Killer 1550 Wireless Driver
+OLED
