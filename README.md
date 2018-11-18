@@ -12,6 +12,8 @@ did some of the update (BIOS) from windows, then made dualboot
 
 installed ubuntu 18.04 with  pwd login, so virtual terminals work
 
+## reboot
+press shift after BIOS stuff to get into recovery mode
 grub nomodeset
 no you can login
 
