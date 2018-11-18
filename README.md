@@ -52,6 +52,11 @@ sed -i 's/CPTCFG_IWLMVM_VENDOR_CMDS=y/# CPTCFG_IWLMVM_VENDOR_CMDS is not set/' .
 make -j4
 sudo make install
 ```
+## Keyboard color fc
+
+https://github.com/trackmastersteve/alienfx
+
+works on my laptop, had to use the newcmdpacket though...
 
 ## Hardware
 : NVIDIA(R) GeForce(R) GTX 1060 with 6GB GDDR5 graphics memory
