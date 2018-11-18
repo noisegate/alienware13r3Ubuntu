@@ -1,7 +1,7 @@
 # alienware13r3Ubuntu
 ## How I got my new Alienware 13 r3 OLED laptop working with Ubuntu18.04
 
-## disclaimer
+## DISCLAIMER
 I am not an expert, just desribing how I got it working...
 
 Just my experience, two days of playing around to get  
@@ -12,6 +12,7 @@ did some of the update (BIOS) from windows, then made dualboot
 
 installed ubuntu 18.04 with  pwd login, so virtual terminals work
 
+### problem:
 Installer always got stuck:
 
 press shift after BIOS loading to get into GRUB menu.
@@ -25,17 +26,40 @@ now the installer will work smoothly
 ## start
 
 added ppa:graphics/ppa stuff
-apt auto-clean, update, upgrade &c
 
+```bash
+add-apt-repository ppa:graphics/ppa
+```
+
+then:
+```bash
+apt auto-clean
+apt update
+apt upgrade
+```
+Now you can take a look at:
+
+```bash
 ubuntu-drivers devices
+```
 
-manually did
+and install recommended drivers
+
+```bash
+ubuntu-drivers autoinstall
+```
+
+I however did it manually:
 
 ```bash
 apt install nvidia-drivers-396
 ```
 
 changed grub: (/etc/default/grub)
+
+```bash
+sudo vi /etc/default/grub
+```
 
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
@@ -51,6 +75,7 @@ to get the Killer 1550 working:
 https://askubuntu.com/questions/1016903/alienware-17-r4-ubuntu-16-04-wifi-driver
 
 so (citing them:)
+
 ```bash
 sudo apt-get install git
 git clone https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git
