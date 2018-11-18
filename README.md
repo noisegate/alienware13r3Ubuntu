@@ -55,5 +55,7 @@ sudo make install
 
 ## Hardware
 : NVIDIA(R) GeForce(R) GTX 1060 with 6GB GDDR5 graphics memory
+
 Killer 1550 Wireless Driver
+
 13.3" QHD (2560 x 1440) Touch Technology, OLED Technology, 400-nits Display
