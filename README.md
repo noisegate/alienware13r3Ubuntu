@@ -1,8 +1,8 @@
 # alienware13r3Ubuntu
-##desiclaimer
+## disclaimer
 I am not an expert, just desribing how I got it working...
 
-Just my experience, two days of playing around to get 
+Just my experience, two days of playing around to get  
 18.04 running on new alienware 13 r3 laptop
 
 did some of the update (BIOS) from windows, then made dualboot
