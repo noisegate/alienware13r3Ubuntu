@@ -29,7 +29,7 @@ apt auto-clean, update, upgrade &c
 
 ubuntu-drivers devices
 
-manually did 
+manually did
 
 ```bash
 apt install nvidia-drivers-396
@@ -43,7 +43,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 ```
 
 commented out the nomeodeset previously set to be able to do first startup
-this worked for me. 
+this worked for me.
 
 ## wifi
 
@@ -60,7 +60,7 @@ sed -i 's/CPTCFG_IWLMVM_VENDOR_CMDS=y/# CPTCFG_IWLMVM_VENDOR_CMDS is not set/' .
 make -j4
 sudo make install
 ```
-## Keyboard color fc
+## Keyboard color fx
 
 https://github.com/trackmastersteve/alienfx
 
