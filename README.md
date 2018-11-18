@@ -12,10 +12,17 @@ did some of the update (BIOS) from windows, then made dualboot
 
 installed ubuntu 18.04 with  pwd login, so virtual terminals work
 
-## reboot
-press shift after BIOS stuff to get into recovery mode
-grub nomodeset
-no you can login
+Installer always got stuck:
+
+press shift after BIOS loading to get into GRUB menu.
+
+https://askubuntu.com/questions/16042/how-to-get-to-the-grub-menu-at-boot-time
+
+and set grub nomodeset
+now the installer will work smoothly
+
+
+## start
 
 added ppa:graphics/ppa stuff
 apt auto-clean, update, upgrade &c
@@ -37,6 +44,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 
 commented out the nomeodeset previously set to be able to do first startup
 this worked for me. 
+
 ## wifi
 
 to get the Killer 1550 working:
