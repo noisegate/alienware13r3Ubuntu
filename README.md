@@ -25,7 +25,7 @@ now the installer will work smoothly
 
 ## start
 
-added ppa:graphics/ppa stuff
+added PPA repository for nvidia drivers:
 
 ```bash
 add-apt-repository ppa:graphics-drivers/ppa
