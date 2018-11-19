@@ -2,10 +2,10 @@
 ## How I got my new Alienware 13 r3 OLED laptop working with Ubuntu18.04
 
 ## DISCLAIMER
-I am not an expert, just desribing how I got it working...
+I Am Not An Expert, just describing how I got it working...
 
-Just my experience, two days of playing around to get  
-18.04 running on new alienware 13 r3 laptop
+ My experience, two days of playing around to get  
+18.04 running on new alienware 13 r3 laptop with OLED/touch screen.
 
 ## in windows:
 did some of the update (BIOS) from windows, then made dualboot
@@ -28,7 +28,7 @@ now the installer will work smoothly
 added ppa:graphics/ppa stuff
 
 ```bash
-add-apt-repository ppa:graphics/ppa
+add-apt-repository ppa:graphics-drivers/ppa
 ```
 
 then:
@@ -48,12 +48,17 @@ and install recommended drivers
 ```bash
 ubuntu-drivers autoinstall
 ```
-
+### Update
+First time:
 I however did it manually:
 
 ```bash
 apt install nvidia-drivers-396
 ```
+
+but a second time I did the recommended, 415
+it turned out to be at the time.
+
 
 changed grub: (/etc/default/grub)
 
@@ -65,9 +70,16 @@ sudo vi /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 #GRUB_CMDLINE_LINUX="nomodeset"
 ```
-
-commented out the nomeodeset previously set to be able to do first startup
+ie: I added ```nvidia-drm.modeset=1``` to ```GRUB_CMDLINE_LINUX_DEFAULT``` and
+commented out ```GRUB_CMDLINE_LINUX="nomodeset"``` previously set to be able to do first startup
 this worked for me.
+
+after editing the grub file:
+
+```bash
+update-grub
+```
+and reboot.
 
 ## wifi
 
