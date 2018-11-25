@@ -1,4 +1,4 @@
-# alienware13r3Ubuntu
+# alienware 13 R3 Ubuntu 18.04
 ## How I got my new Alienware 13 r3 OLED laptop working with Ubuntu18.04
 
 ## DISCLAIMER
