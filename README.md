@@ -96,6 +96,11 @@ make defconfig-iwlwifi-public
 sed -i 's/CPTCFG_IWLMVM_VENDOR_CMDS=y/# CPTCFG_IWLMVM_VENDOR_CMDS is not set/' .config
 make -j4
 sudo make install
+
+after kernel update u need to https://gist.github.com/awesomebytes/87071f45b88eea334c6c8065a5956614
+repeat sudo make install
+
+
 ```
 ## Keyboard color fx
 
@@ -109,3 +114,9 @@ works on my laptop, had to use the newcmdpacket though...
 Killer 1550 Wireless Driver
 
 13.3" QHD (2560 x 1440) Touch Technology, OLED Technology, 400-nits Display
+
+##Slow dekstop
+After update very slow desktop. This was caused by
+```GRUB_CMDLINE_LINUX="nomodeset"``` which should have been commented out but 
+somehow reappaered at the bottom of the grub file.
+
