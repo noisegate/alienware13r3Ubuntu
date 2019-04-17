@@ -115,9 +115,9 @@ Killer 1550 Wireless Driver
 
 13.3" QHD (2560 x 1440) Touch Technology, OLED Technology, 400-nits Display
 
-##Slow dekstop
+## Slow dekstop
 
 After update very slow desktop. This was caused by
 ```GRUB_CMDLINE_LINUX="nomodeset"``` which should have been commented out but 
-somehow reappaered at the bottom of the grub file.
+somehow reappeared at the bottom of the grub file.
 
