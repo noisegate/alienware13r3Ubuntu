@@ -118,6 +118,31 @@ Killer 1550 Wireless Driver
 ## Slow dekstop
 
 After update very slow desktop. This was caused by
-```GRUB_CMDLINE_LINUX="nomodeset"``` which should have been commented out but 
+```GRUB_CMDLINE_LINUX="nomodeset" 
+``` 
+which should have been commented out but 
 somehow reappeared at the bottom of the grub file.
+
+
+## Wifi
+
+After a while slows down, possible remedy:
+
+https://askubuntu.com/questions/1030653/wifi-randomly-disconnected-on-ubuntu-18-04-lts
+
+So, 
+```
+/etc/NetworkManager/conf.d/default-wifi-powersave-on.conf and changing
+```
+
+```
+wifi.powersave = 3
+```
+
+to 
+
+```
+wifi.powersave = 2
+```
+
 
