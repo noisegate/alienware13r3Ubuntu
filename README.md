@@ -66,10 +66,11 @@ changed grub: (/etc/default/grub)
 sudo vi /etc/default/grub
 ```
 
-```
+```bash
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 #GRUB_CMDLINE_LINUX="nomodeset"
 ```
+
 ie: I added ```nvidia-drm.modeset=1``` to ```GRUB_CMDLINE_LINUX_DEFAULT``` and
 commented out ```GRUB_CMDLINE_LINUX="nomodeset"``` previously set to be able to do first startup
 this worked for me.
@@ -118,7 +119,8 @@ Killer 1550 Wireless Driver
 ## Slow dekstop
 
 After update very slow desktop. This was caused by
-```GRUB_CMDLINE_LINUX="nomodeset" 
+```bash
+GRUB_CMDLINE_LINUX="nomodeset" 
 ``` 
 which should have been commented out but 
 somehow reappeared at the bottom of the grub file.
